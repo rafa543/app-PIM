@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Autocomplete</title>
+  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_qbJU6lqAj07FUZb19tObv3NbPwIPqRw&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="right-panel">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">More results</button>
+    </div>
+    <a href="#" id="locationButton">
+      <img src="pin-localizacao.png" alt="">
+    </a>
+
+    <div class="searchBox" id="searchBox"> 
+      <i class="fa fa-search"></i>
+      <input id="searchInput" class="searchInput"type="search" name="" placeholder="Search...">
+      <button class="searchButton" href="#">
+          <i class="material-icons">
+              GO
+          </i>
+      </button>
+    </div>
+
+
+    
+    
+    <div id="modal-error" class="error">
+      <div class="modal">
+        <button class="close">X</button>
+        <h3>error</h3>
+      </div>
+    </div>
+  </body>
+</html>
